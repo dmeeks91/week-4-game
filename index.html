@@ -13,7 +13,7 @@
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
-    <div class="container-fluid">        
+    <div class="container-fluid logoRow">        
         <div class="row logoRow" id="logoHeader">
             <div class="col-sm-3" id="logoYou">
             </div>
@@ -21,9 +21,10 @@
                 <img src="assets/images/Logo2.png" class = 'img-responsive logo'>
             </div>
             <div class="col-sm-3" id="logoEnemy"> 
-                <img src="assets/images/imgNakia.jpg" class = 'img-responsive photoID'>
             </div>
         </div>
+    </div>
+    <div class="container-fluid mainSection">
         <div id = "step1">
             <div class="row titleRow">
                 <h2>Select a Character:</h2>
@@ -32,20 +33,19 @@
             </div> 
         </div>        
         <div id = "step2">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="row titleRow">
-                        <h2>Selected Character</h2>
-                    </div>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-7">
-                    <h2>Select an Enemy</h2>
-                </div>
+            <div class="row titleRow">
+                <h2>Select an Enemy:</h2>
             </div>
-            <div class="row" id="picRow">            
+            <div class="row" id="activeEnemies">            
             </div>
-        </div>      
+        </div>  
+        <div id = "step3">
+            <div class="row titleRow">
+                <h2>Press Attack to Fight:</h2>
+            </div>
+            <div class="row" id="fightArea">            
+            </div>
+        </div>  
     </div>    
 </body>
 </html>

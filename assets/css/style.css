@@ -20,12 +20,25 @@ body{
     padding: 30px;
     background-color: #000;
 }
+.logoRow {
+    background-color: #000;
+}
+
+#activeEnemies {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .titleRow{
     margin: auto;
 }
 
-.photoThumb h3 {
+.mainSection, #logoHeader {
+    max-width: 1025px;
+    margin: auto;
+}
+
+.photoThumb h3, .logoRow h3 {
     font-size: 18px;
     color: #000;
     text-align: center;
@@ -35,6 +48,7 @@ body{
 
 .logoRow .photoID {
     border: 5px solid #e1a653; 
+    height: 200px;
 }
 
 .nameBanner{
@@ -46,4 +60,30 @@ body{
     border-radius: 25px;
     border: 5px solid #000;
     background: #e1a653;
+}
+
+.logoRow .nameBanner {
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    margin-left: 4%;
+    padding: 5px;
+    border-radius: 25px;
+    border: 5px solid #000;
+}
+.aBtnCol {
+    min-height: 300px;
+}
+.btnAttack {
+    border: 5px solid #e1a653;
+    background: #000;
+    width: 90%;
+    margin: auto;
+    margin-top: 95px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 40px;
+    display: block;
+    color: #e1a653;
 }
