@@ -1,0 +1,49 @@
+body{
+    background-color: #e1a653;
+    color: #000;
+    font-family: 'Lalezar', cursive;
+}
+.photoID{
+    height: 268px;
+    width: 100%;
+    margin: auto;
+    border-radius: 12px;
+    border: 5px solid #000;
+}
+
+.logo{
+    margin: auto;
+    height: 200px;
+}
+
+#logoHeader{
+    padding: 30px;
+    background-color: #000;
+}
+
+.titleRow{
+    margin: auto;
+}
+
+.photoThumb h3 {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    background: #e1a653;
+    border-bottom: 0;
+}
+
+.logoRow .photoID {
+    border: 5px solid #e1a653; 
+}
+
+.nameBanner{
+    position: absolute;
+    bottom: 70px;
+    width: 80%;
+    margin-left: 4%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 5px solid #000;
+    background: #e1a653;
+}

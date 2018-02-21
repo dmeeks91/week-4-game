@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black Panther Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="container-fluid">        
+        <div class="row logoRow" id="logoHeader">
+            <div class="col-sm-3" id="logoYou">
+            </div>
+            <div class="col-sm-6">
+                <img src="assets/images/Logo2.png" class = 'img-responsive logo'>
+            </div>
+            <div class="col-sm-3" id="logoEnemy"> 
+                <img src="assets/images/imgNakia.jpg" class = 'img-responsive photoID'>
+            </div>
+        </div>
+        <div id = "step1">
+            <div class="row titleRow">
+                <h2>Select a Character:</h2>
+            </div>
+            <div class="row" id="allCharacters">            
+            </div> 
+        </div>        
+        <div id = "step2">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row titleRow">
+                        <h2>Selected Character</h2>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-7">
+                    <h2>Select an Enemy</h2>
+                </div>
+            </div>
+            <div class="row" id="picRow">            
+            </div>
+        </div>      
+    </div>    
+</body>
+</html>
