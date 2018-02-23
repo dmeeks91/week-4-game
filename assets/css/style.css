@@ -3,6 +3,11 @@ body{
     color: #000;
     font-family: 'Lalezar', cursive;
 }
+
+span{
+    color: white;
+    text-decoration: underline;
+}
 .photoID{
     height: 268px;
     width: 100%;
@@ -86,4 +91,10 @@ body{
     font-size: 40px;
     display: block;
     color: #e1a653;
+}
+#modalPanel{
+    margin-bottom: 0px;
+}
+#gameOverModal, #msg {
+    text-align: center;
 }
