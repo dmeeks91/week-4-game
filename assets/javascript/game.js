@@ -7,7 +7,7 @@ $(document).ready(function() {
                 name: "Killmonger",
                 HP: 120,
                 AP: 8,
-                cAP: 20,
+                cAP: 10,
                 image:"assets/images/imgKillmonger2.jpg",
             },
             {
@@ -15,15 +15,15 @@ $(document).ready(function() {
                 name: "Shuri",
                 HP: 100,
                 AP: 15,
-                cAP: 5,
+                cAP: 20,
                 image:"assets/images/imgShuri.jpg",
             },
             {
                 displayName: "T'Challa",
                 name: "TChalla",
-                HP: 150,
-                AP: 4,
-                cAP: 20,
+                HP: 110,
+                AP: 12,
+                cAP: 5,
                 image:"assets/images/imgTChalla.jpg",
             },
             {
