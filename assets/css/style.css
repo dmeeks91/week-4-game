@@ -92,9 +92,36 @@ span{
     display: block;
     color: #e1a653;
 }
-#modalPanel{
-    margin-bottom: 0px;
+.panel-footer {
+    text-align: right;
 }
+
+#modalPanel, #modalTitle{
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+#modalPanel .panel-heading, #modalPanel .panel-footer {
+    color: #e1a653;
+    background-color: #000;
+    border: 5px solid #e1a653;    
+}
+
+#modalPanel .panel-body
+{
+    background-color: #e6a43763;
+    font-size: 20px;
+    border: 5px solid #e1a653;
+}
+
+#modalPanel button {
+    margin-right: 10px;
+    color: #000;
+    border-radius: 25px;
+    border: 5px solid #000;
+    background: #e1a653;
+}
+
 #gameOverModal, #msg {
     text-align: center;
 }

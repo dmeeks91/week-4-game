@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //game object
     var game = {
         characters: [
             {
@@ -30,7 +31,7 @@ $(document).ready(function() {
                 name: "Nakia",
                 HP: 180,
                 AP: 10,
-                cAP: 25,
+                cAP: 15,
                 image:"assets/images/imgNakia.jpg",
             },
         ],
@@ -43,7 +44,8 @@ $(document).ready(function() {
             $.each(self.characters, function(index, person) {
                 if (name === person.name)
                 {
-                    self['selected' + type] = person;
+                    // Use Object.assign to make clone rather than pointer
+                    self['selected' + type] = Object.assign({}, person); 
                     self.enemies.splice(game.enemies.indexOf(person.name), 1);
                     self.setMessage('empty');
                 }
@@ -147,8 +149,9 @@ $(document).ready(function() {
                     return;
                     break;
                 case "playerHP":
-                    html = $("<h2>You currently have <span> " + this.selectedPlayer.HP + " </span> " + 
-                             " health points. Select an enemy to fight! </h2>");
+                    html = $("<h2>Congratulations, you defeated " + this.selectedEnemy.displayName + "!</h2>" +
+                             "<h2>You currently have <span> " + this.selectedPlayer.HP + " </span> " + 
+                             " health points. Select another enemy to fight! </h2>");
                     break;
                 case "restart":
                     html = $("<h2>Refresh the page if you change your mind and want to play again.</h2>");
@@ -259,6 +262,7 @@ $(document).ready(function() {
         }
     }
 
+    //Button Functions
     selectPlayer = function(pName) {
         //Set selected player
         game.selectCharacter(pName, 'Player');
@@ -270,7 +274,6 @@ $(document).ready(function() {
         game.showEnemies();
 
     }   
-
     selectEnemy = function(name) {
         //Clear fight area
         $('#fightArea').empty();
@@ -298,13 +301,12 @@ $(document).ready(function() {
         $('#step2').hide();
         $('#step3').show();
     }
-
     attack = function(){
         game.attack();
     }
-
     $('#play').on('click',function(){game.newGame();});
     $('#exit').on('click',function(){game.exit();});
 
+    //begin a new game 
     game.newGame();
 });
