@@ -6,14 +6,14 @@ $(document).ready(function() {
                 displayName: "Killmonger",
                 name: "Killmonger",
                 HP: 120,
-                AP: 8,
+                AP: 10,
                 cAP: 10,
                 image:"assets/images/imgKillmonger2.jpg",
             },
             {
                 displayName: "Shuri",
                 name: "Shuri",
-                HP: 100,
+                HP: 95,
                 AP: 15,
                 cAP: 20,
                 image:"assets/images/imgShuri.jpg",
@@ -21,7 +21,7 @@ $(document).ready(function() {
             {
                 displayName: "T'Challa",
                 name: "TChalla",
-                HP: 110,
+                HP: 115,
                 AP: 12,
                 cAP: 5,
                 image:"assets/images/imgTChalla.jpg",
@@ -30,7 +30,7 @@ $(document).ready(function() {
                 displayName: "Nakia",
                 name: "Nakia",
                 HP: 180,
-                AP: 10,
+                AP: 2,
                 cAP: 15,
                 image:"assets/images/imgNakia.jpg",
             },
@@ -189,11 +189,9 @@ $(document).ready(function() {
             //Check HP of each to see if the round is over
             if (this.selectedPlayer.HP <= 0)
             {
-                this.setModalClass('#modalPanel',false)
                 this.gameOver(false)
             }
-
-            if(this.selectedEnemy.HP <= 0)
+            else if(this.selectedEnemy.HP <= 0)
             {
                 if(this.enemies.length > 0)
                 {
@@ -201,15 +199,9 @@ $(document).ready(function() {
                 }
                 else
                 {
-                    this.setModalClass('#modalPanel',true);
                     this.gameOver(true);                              
                 }
             }
-        },
-        setModalClass: function(element, win) {
-            var add = (win)?'panel-success':'panel-danger';
-            var rmv = (win)?'panel-danger':'panel-success';
-            $(element).removeClass(rmv).addClass(add);
         },
         gameOver: function(win) {
             if (win)
